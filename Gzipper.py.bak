@@ -10,7 +10,7 @@ def nav():
     return path
 
 
-def main():
+def gzipper():
     target_dir = pathlib.Path(nav())
     for file in target_dir.iterdir():
         # Skip directories
@@ -23,4 +23,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    gzipper()
