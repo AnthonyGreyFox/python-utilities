@@ -8,7 +8,7 @@ def nav():
     return path
 
 
-def main():
+def file_cleaner():
     filenames = glob.glob(nav() + "\*.xlsx")
     for file in filenames:
         check_cell = openpyxl.load_workbook(file)["Data"]["H2"]
@@ -17,4 +17,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    file_cleaner()
